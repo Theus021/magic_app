@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/gasolinaFragment"
+        android:name="com.generation.superapp.GasolinaFragment"
+        android:label="fragment_gasolina"
+        tools:layout="@layout/fragment_gasolina" />
+    <fragment
+        android:id="@+id/IMCFragment"
+        android:name="com.generation.superapp.IMCFragment"
+        android:label="fragment_i_m_c"
+        tools:layout="@layout/fragment_i_m_c" />
+    <fragment
+        android:id="@+id/rodizioFragment"
+        android:name="com.generation.superapp.RodizioFragment"
+        android:label="fragment_rodizio"
+        tools:layout="@layout/fragment_rodizio" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.generation.superapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_rodizioFragment"
+            app:destination="@id/rodizioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_IMCFragment"
+            app:destination="@id/IMCFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_gasolinaFragment2"
+            app:destination="@id/gasolinaFragment" />
+    </fragment>
+</navigation>

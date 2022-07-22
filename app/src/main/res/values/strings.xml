@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Layout de Home -->
+    <string name="app_name">superApp</string>
+    <string name="bem_vindo">Bem vindo !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculo_de_imc">Calculo de IMC</string>
+    <string name="fa_a_o_calculo_e_descubra_o_seu_peso_ideal">Faça o calculo e Descubra o seu peso ideal</string>
+    <string name="imagem_do_app_gasolina">Imagem_do_app_gasolina</string>
+    <string name="imagem_app_calculadora_imc">Imagem_app_calculadora_imc</string>
+    <string name="gasolina_ou_etanol">Gasolina ou Etanol</string>
+    <string name="veja_qual_combustiv_l_mais_vtajoso">Veja qual combustivél é mais vtajoso</string>
+    <string name="rodiz_o_day">Rodizío Day</string>
+    <string name="insira_o_numero_completoda_sua_placa_para_sabero_dia_do_seu_rod_zio">Insira o numero completoda sua placa para sabero dia do seu rodízio</string>
+    <string name="caculadora_simples">Caculadora simples</string>
+    <string name="fa_a_calculos_com_express_es_simples">Faça calculos com expressões simples</string>
+    <string name="veja_quando_ser_o_dia_do_seu_rod_zio_pela_placa">Veja quando será o dia do seu rodízio pela placa</string>
+    <string name="mulher">Mulher</string>
+    <string name="escolha_seu_g_nero">Escolha seu gênero</string>
+    <string name="calculadora_de_imc">Calculadora de IMC</string>
+    <string name="background_azull">background_azull</string>
+    <string name="homem">Homem</string>
+    <string name="calcular">Calcular</string>
+
+</resources>

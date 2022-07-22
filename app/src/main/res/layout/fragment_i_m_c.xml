@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".IMCFragment">
+
+
+    <ImageView
+        android:id="@+id/background_azul"
+        android:layout_width="367dp"
+        android:layout_height="331dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-70dp"
+        android:src="@drawable/ic_tra_ado_imc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/background_azull" />
+
+    <TextView
+        android:id="@+id/titulo_calculadora_de_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/calculadora_de_imc"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/escolha_seu_g_nero"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_calculadora_de_imc" />
+
+    <Button
+        android:id="@+id/botao_mulher"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/mulher"
+        android:backgroundTint="@color/lightGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_genero" />
+
+    <Button
+        android:id="@+id/botao_homem"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/homem"
+        android:backgroundTint="@color/lightGray"
+        app:layout_constraintStart_toEndOf="@+id/botao_mulher"
+        app:layout_constraintTop_toBottomOf="@+id/texto_genero" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/calcular"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
