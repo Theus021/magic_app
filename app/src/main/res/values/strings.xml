@@ -22,5 +22,7 @@
     <string name="background_azull">background_azull</string>
     <string name="homem">Homem</string>
     <string name="calcular">Calcular</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
 
 </resources>

@@ -7,77 +7,59 @@
     android:background="@color/gray"
     tools:context=".IMCFragment">
 
-
-    <ImageView
-        android:id="@+id/background_azul"
-        android:layout_width="367dp"
-        android:layout_height="331dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="-70dp"
-        android:src="@drawable/ic_tra_ado_imc"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/background_azull" />
-
-    <TextView
-        android:id="@+id/titulo_calculadora_de_imc"
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/calculadora_de_imc"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/texto_genero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/escolha_seu_g_nero"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_calculadora_de_imc" />
+    <RelativeLayout
+        android:id="@+id/card_mulher"
+        android:background="@drawable/radius_card_view"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/botao_mulher"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/lightGray"
-        android:text="@string/mulher"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_genero" />
-
-    <Button
-        android:id="@+id/botao_homem"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
+    <RelativeLayout
+        android:id="@+id/card_homem"
+        android:background="@drawable/radius_card_view"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/lightGray"
-        android:text="@string/homem"
-        app:layout_constraintStart_toEndOf="@+id/botao_mulher"
-        app:layout_constraintTop_toBottomOf="@+id/texto_genero" />
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+
+    <RelativeLayout
+        android:id="@+id/card_altura"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/radius_card_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/altura" />
+        app:layout_constraintTop_toBottomOf="@+id/card_mulher" />
+
+    <RelativeLayout
+        android:id="@+id/card_genero"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/radius_card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_altura" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonCalcular"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/calcular"
@@ -85,17 +67,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/altura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:text="Altura"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botao_mulher" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
