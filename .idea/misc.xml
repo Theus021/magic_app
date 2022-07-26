@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable-v24/ball_baby_blue.xml" value="0.2075" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable-v24/ball_green.xml" value="0.2075" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/background_cardview.xml" value="0.2" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/batao_genero2.xml" value="0.2075" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/border_shadow.xml" value="0.189" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/botao_de_genero.xml" value="0.193" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/botao_genero.xml" value="0.193" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/button_shape.xml" value="0.2065" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/card_view_2.xml" value="0.161" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/costmu_thumb.xml" value="0.189" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/costum_thumb.xml" value="0.189" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/ic_tra_ado_imc.xml" value="0.2075" />
@@ -16,10 +19,12 @@
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/seekbar_progress.xml" value="0.189" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/seekbar_style.xml" value="0.189" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_gasolina.xml" value="0.1859375" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_gasolina.xml" value="0.1" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_i_m_c.xml" value="0.22" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_rodizio.xml" value="0.1859375" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_i_m_c.xml" value="0.2" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_resultado.xml" value="0.5" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_resultado_gasolina.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/layout/fragment_rodizio.xml" value="0.22" />
       </map>
     </option>
   </component>
@@ -28,5 +33,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.67" />
+      </ProjectState>
+    </option>
   </component>
 </project>
