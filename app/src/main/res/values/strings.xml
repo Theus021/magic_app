@@ -24,5 +24,17 @@
     <string name="calcular">Calcular</string>
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
+    <string name="idade">Idade</string>
+    <string name="_18">18</string>
+    <string name="peso__">Peso</string>
+    <string name="_60">60</string>
+    <string name="_altura">Altura</string>
+    <string name="_000">000</string>
+    <string name="eu_sou">Eu sou</string>
+    <string name="sou">Sou</string>
+    <string name="homemtoggleButton">Homem</string>
+    <string name="genero">Gênero</string>
+    <string name="mulherSwitchButton">Mulher</string>
+    <string name="homemToggleButton">Homem</string>
 
 </resources>
