@@ -1,1 +1,0 @@
-Aplicativo de estudos feito por Theus021, com a mentoria do Raphael Oliveira

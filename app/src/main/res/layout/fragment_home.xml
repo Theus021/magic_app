@@ -25,6 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
+
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
@@ -58,20 +60,21 @@
                         android:layout_margin="20dp"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:id="@+id/imageView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:contentDescription="@string/imagem_app_calculadora_imc"
-                            app:srcCompat="@drawable/ic_launcher_background" />
+                    <ImageView
+                        android:id="@+id/imageImc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:contentDescription="@string/imagem_do_app_gasolina"
+                        android:src="@drawable/ic_launcher_background" />
 
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_gravity="end"
                         android:layout_marginTop="20dp"
-                        android:layout_marginEnd="150dp"
+                        android:layout_marginStart="150dp"
                         android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
@@ -79,7 +82,7 @@
                             android:id="@+id/titulo_card_calculo_imc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
+                            android:layout_marginStart="10dp"
                             android:text="@string/calculo_de_imc"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
@@ -89,8 +92,9 @@
                             android:id="@+id/descricao_card_imc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="20dp"
                             android:text="@string/fa_a_o_calculo_e_descubra_o_seu_peso_ideal"
                             android:textColor="@color/white"
                             android:textStyle="normal" />
@@ -112,7 +116,6 @@
                     <LinearLayout
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:layout_gravity="end"
                         android:layout_margin="20dp"
                         android:orientation="horizontal">
 
@@ -124,11 +127,13 @@
                             android:src="@drawable/ic_launcher_background" />
                     </LinearLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
@@ -136,7 +141,7 @@
                             android:id="@+id/titulo_card_gasolina"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
+                            android:layout_marginStart="10dp"
                             android:text="@string/gasolina_ou_etanol"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
@@ -146,8 +151,8 @@
                             android:id="@+id/descricao_card_gasolina"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
                             android:text="@string/veja_qual_combustiv_l_mais_vtajoso"
                             android:textColor="@color/white" />
                     </LinearLayout>
@@ -164,10 +169,26 @@
                     tools:layout_editor_absoluteX="1dp">
 
                     <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_launcher_background" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="20dp"
-                        android:layout_marginEnd="150dp"
+                        android:layout_marginStart="150dp"
                         android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
@@ -191,21 +212,7 @@
                             android:textColor="@color/white" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="110dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:layout_margin="20dp"
-                        android:orientation="horizontal">
 
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_launcher_background" />
-                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -220,10 +227,23 @@
                     tools:layout_editor_absoluteX="1dp">
 
                     <LinearLayout
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_launcher_background" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="20dp"
-                        android:layout_marginEnd="150dp"
+                        android:layout_marginStart="150dp"
                         android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
@@ -232,7 +252,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:text="@string/caculadora_simples"
+                            android:text="@string/sobre_o_app"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -243,23 +263,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="@string/fa_a_calculos_com_express_es_simples"
+                            android:text="@string/para_mais_informa_es"
                             android:textColor="#FFFFFF" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="109dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:layout_margin="20dp"
-                        android:orientation="horizontal">
-
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_launcher_background" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

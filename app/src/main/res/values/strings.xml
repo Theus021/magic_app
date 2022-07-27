@@ -89,5 +89,7 @@
     <string name="rs">R$</string>
     <string name="etanol">Etanol</string>
     <string name="calcular_">Calcular</string>
+    <string name="sobre_o_app">Sobre o App</string>
+    <string name="para_mais_informa_es">Para mais informações</string>
 
 </resources>
