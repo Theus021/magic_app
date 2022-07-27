@@ -82,5 +82,12 @@
     <string name="_7h_10h_da_manh">7h - 10h da manhã</string>
     <string name="_17h_20h_da_noite">17h - 20h da noite</string>
     <string name="hor_rios">Horários</string>
+    <string name="digite_os_prec_os_abaixo">Digite os precços abaixo</string>
+    <string name="button">Button</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="_00_0">00.0</string>
+    <string name="rs">R$</string>
+    <string name="etanol">Etanol</string>
+    <string name="calcular_">Calcular</string>
 
 </resources>
