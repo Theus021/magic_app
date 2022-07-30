@@ -14,7 +14,7 @@
         android:id="@+id/IMCFragment"
         android:name="com.generation.superapp.IMCFragment"
         android:label="fragment_i_m_c"
-        tools:layout="@layout/fragment_i_m_c" />
+        tools:layout="@layout/fragment_imc" />
     <fragment
         android:id="@+id/rodizioFragment"
         android:name="com.generation.superapp.RodizioFragment"

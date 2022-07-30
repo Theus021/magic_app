@@ -3,8 +3,6 @@
     <!-- Layout de Home -->
     <string name="app_name">superApp</string>
     <string name="bem_vindo">Bem vindo !</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="calculo_de_imc">Calculo de IMC</string>
     <string name="fa_a_o_calculo_e_descubra_o_seu_peso_ideal">Faça o calculo e Descubra o seu peso ideal</string>
     <string name="imagem_do_app_gasolina">Imagem_do_app_gasolina</string>
@@ -68,7 +66,6 @@
     <string name="orangeball">orange ball</string>
     <string name="redball">red ball</string>
     <string name="dia_da_semana">Dia da semana</string>
-    <string name="final">Final</string>
     <string name="final_com">Final Com</string>
     <string name="_1_e_2">1 e 2</string>
     <string name="ter_a_feira">Terça-feira</string>
@@ -82,7 +79,6 @@
     <string name="_7h_10h_da_manh">7h - 10h da manhã</string>
     <string name="_17h_20h_da_noite">17h - 20h da noite</string>
     <string name="hor_rios">Horários</string>
-    <string name="digite_os_prec_os_abaixo">Digite os precços abaixo</string>
     <string name="button">Button</string>
     <string name="gasolina">Gasolina</string>
     <string name="_00_0">00.0</string>
@@ -91,5 +87,8 @@
     <string name="calcular_">Calcular</string>
     <string name="sobre_o_app">Sobre o App</string>
     <string name="para_mais_informa_es">Para mais informações</string>
+    <string name="digite_os_valores_abaixo">Digite os valores abaixo</string>
+    <string name="descubra_qual_combustiv_l_ser_mais_vantajoso">Descubra qual combustivél será mais vantajoso</string>
+    <string name="cm">Cm</string>
 
 </resources>

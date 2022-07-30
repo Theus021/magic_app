@@ -13,13 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/digite_os_prec_os_abaixo"
+        android:text="@string/digite_os_valores_abaixo"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -68,7 +68,7 @@
             android:textColor="#FFFFFF"
             android:textSize="60sp"
             android:inputType="number"
-            android:background="false"/>
+            android:background="@null"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -100,8 +100,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
             android:text="@string/rs"
             android:textColor="@color/white"
             android:textSize="60sp" />
@@ -113,7 +113,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:background="false"
+            android:background="@null"
             android:inputType="number"
             android:text="@string/_00_0"
             android:textColor="#FFFFFF"
