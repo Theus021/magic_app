@@ -1,23 +1,21 @@
 package com.generation.superapp
 
-import android.app.Dialog
+import android.R.attr.defaultValue
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
-import android.widget.ImageView
+import android.widget.EditText
 import android.widget.SeekBar
-import android.widget.TextView
-import android.widget.Toast
-import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.generation.superapp.databinding.FragmentImcBinding
 
 
 class IMCFragment : Fragment() {
 
     private lateinit var binding: FragmentImcBinding
+    private lateinit var comunicador: Comunicador
 
     private var genero: String = ""
     private var altura: Int = 0
@@ -39,6 +37,8 @@ class IMCFragment : Fragment() {
         btnClick()
 
         return binding.root
+
+
     }
 
     private fun getUserAltura() {
@@ -102,37 +102,16 @@ class IMCFragment : Fragment() {
 
     private fun btnClick(){
 
+        val textView = binding.resultadoPeso
+
+        comunicador = activity as Comunicador
+
         binding.buttonCalcular.setOnClickListener {
+            comunicador.passData(textView.text.toString())
 
-            if(!validarCampos()){
-                Toast.makeText(context, "Confira se todos os campos estão preenchidos" , Toast.LENGTH_SHORT).show()
-            }
-            else{
-                dialogResultado()
-            }
         }
-    }
-
-    private fun dialogResultado(){
-
-        var dialogFragment : DialogFragment = DialogFragment()
-        dialogFragment.show()
-
-    }
-
-     fun resultadoIMC(): Double {
-
-        val imc = (peso*peso/altura).toDouble()*1000
-        return imc
-    }
-
-
-    private fun validarCampos(): Boolean {
-
-        var error = true
-        if (genero == "" || altura <=0 || idade <=0 || peso <=0){
-            error = false
-        }
-        return error
     }
 }
+
+
+

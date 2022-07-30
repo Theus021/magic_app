@@ -90,7 +90,7 @@
                             android:layout_marginTop="20dp"
                             android:layout_marginStart="10dp"
 
-                            android:text="@string/fa_a_o_calculo_e_descubra_o_seu_peso_ideal"
+                            android:text="@string/veja_se_est_no_peso_ideal"
                             android:textColor="@color/white"
                             android:textStyle="normal" />
 
@@ -126,9 +126,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginStart="150dp"
-                        android:layout_marginEnd="20dp"
+
                         android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
@@ -136,7 +136,7 @@
                             android:id="@+id/titulo_card_gasolina"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginStart="20dp"
                             android:text="@string/gasolina_ou_etanol"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
@@ -146,9 +146,10 @@
                             android:id="@+id/descricao_card_gasolina"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginStart="10dp"
-                            android:text="@string/descubra_qual_combustiv_l_ser_mais_vantajoso"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/veja_a_melhor_opc_o_para_o_seu_carro"
                             android:textColor="@color/white" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -202,7 +203,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/veja_quando_ser_o_dia_do_seu_rod_zio_pela_placa"
                             android:textColor="@color/white" />
                     </LinearLayout>
@@ -257,7 +259,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/para_mais_informa_es"
                             android:textColor="#FFFFFF" />
                     </LinearLayout>

@@ -1,10 +1,12 @@
 package com.generation.superapp
 
+import android.R
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.generation.superapp.databinding.FragmentResultadoImcBinding
 
@@ -12,16 +14,27 @@ class ResultadoImc: DialogFragment() {
 
     private lateinit var binding: FragmentResultadoImcBinding
 
+    var output: String? = ""
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentResultadoImcBinding.inflate(layoutInflater, container, false)
 
+        var textView : TextView = binding.resultadoPesoDg
+
+
+
+        output = arguments?.getString("input")
+        textView.text = output
+
         return binding.root
+
     }
 
-    val resultado = requireArguments().getSerializable("resultadoImc")
+
+
 
 }

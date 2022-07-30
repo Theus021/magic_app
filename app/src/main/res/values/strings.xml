@@ -4,7 +4,6 @@
     <string name="app_name">superApp</string>
     <string name="bem_vindo">Bem vindo !</string>
     <string name="calculo_de_imc">Calculo de IMC</string>
-    <string name="fa_a_o_calculo_e_descubra_o_seu_peso_ideal">Faça o calculo e Descubra o seu peso ideal</string>
     <string name="imagem_do_app_gasolina">Imagem_do_app_gasolina</string>
     <string name="imagem_app_calculadora_imc">Imagem_app_calculadora_imc</string>
     <string name="gasolina_ou_etanol">Gasolina ou Etanol</string>
@@ -88,7 +87,8 @@
     <string name="sobre_o_app">Sobre o App</string>
     <string name="para_mais_informa_es">Para mais informações</string>
     <string name="digite_os_valores_abaixo">Digite os valores abaixo</string>
-    <string name="descubra_qual_combustiv_l_ser_mais_vantajoso">Descubra qual combustivél será mais vantajoso</string>
     <string name="cm">Cm</string>
+    <string name="veja_se_est_no_peso_ideal">Veja se está no peso ideal</string>
+    <string name="veja_a_melhor_opc_o_para_o_seu_carro">Veja a melhor opcão para o seu carro</string>
 
 </resources>
