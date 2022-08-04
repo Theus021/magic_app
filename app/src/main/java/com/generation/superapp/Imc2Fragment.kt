@@ -1,11 +1,14 @@
 package com.generation.superapp
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.SeekBar
+import androidx.appcompat.app.AppCompatActivity
 import com.generation.superapp.databinding.FragmentImc2Binding
 
 class Imc2Fragment : Fragment() {
@@ -92,20 +95,27 @@ class Imc2Fragment : Fragment() {
         binding.buttonMenosKg.setOnClickListener {
             peso--
             binding.resultadoPeso.text = peso.toString()
+
+            comunicador.passData(binding.resultadoPeso.text.toString())
         }
     }
 
     private fun btnClick(){
 
-
-        //Teste
         val textView = binding.resultadoPeso
+        val textasd = binding.resultadoAltura
+
+        val dialog = Dialog(activity as AppCompatActivity)
 
         comunicador = activity as Comunicador
 
         binding.buttonCalcular.setOnClickListener {
+
             comunicador.passData(textView.text.toString())
+            comunicador.passData(textasd.text.toString())
+
 
         }
     }
+
 }

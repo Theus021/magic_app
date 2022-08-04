@@ -9,12 +9,15 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.generation.superapp.databinding.FragmentResultadoImcBinding
+import org.w3c.dom.Text
 
 class ResultadoImc: DialogFragment() {
 
     private lateinit var binding: FragmentResultadoImcBinding
+    private lateinit var comunicador : Comunicador
 
     var output: String? = ""
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,8 +29,9 @@ class ResultadoImc: DialogFragment() {
         var textView : TextView = binding.resultadoPesoDg
 
 
-
         output = arguments?.getString("input")
+
+
         textView.text = output
 
         return binding.root

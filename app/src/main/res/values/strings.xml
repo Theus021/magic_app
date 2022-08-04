@@ -40,7 +40,6 @@
     <string name="digite_sua_placa_a_baixo">Digite sua Placa a baixo:</string>
     <string name="proximo">proximo</string>
     <string name="botao_sair">Botao sair</string>
-    <string name="seu_imc">Seu IMC</string>
     <string name="_00_0_">00.0</string>
     <string name="normal">Normal</string>
     <string name="_16_0_16_9_">16.0 – 16.9</string>
@@ -96,5 +95,7 @@
     <string name="botaodemenos">BotaoDeMenos</string>
     <string name="botaodemenos2">BotaoDeMenos2</string>
     <string name="botaodemais2">botaoDeMais2</string>
+    <string name="seu_imc">Seu IMC é:</string>
+    <string name="categoria">Categoria</string>
 
 </resources>

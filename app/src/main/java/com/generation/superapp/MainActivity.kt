@@ -29,14 +29,15 @@ class MainActivity : AppCompatActivity(), Comunicador {
         bundle.putString("input", editDataResult)
 
 
-        val transicao = this.supportFragmentManager.beginTransaction()
+
+
+       val transicao = this.supportFragmentManager.beginTransaction()
         val fragmentB = ResultadoImc()
 
         fragmentB.arguments = bundle
 
         transicao.replace(R.id.fragmentContainerView, fragmentB).commit()
     }
-
 
 
 }
