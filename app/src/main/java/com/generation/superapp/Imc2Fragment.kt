@@ -1,21 +1,17 @@
 package com.generation.superapp
 
-import android.R.attr.defaultValue
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.SeekBar
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.generation.superapp.databinding.FragmentImcBinding
+import com.generation.superapp.databinding.FragmentImc2Binding
 
+class Imc2Fragment : Fragment() {
 
-class IMCFragment : Fragment() {
-
-    private lateinit var binding: FragmentImcBinding
-    private lateinit var comunicador: Comunicador
+    private lateinit var binding: FragmentImc2Binding
+    private lateinit var comunicador : Comunicador
 
     private var genero: String = ""
     private var altura: Int = 0
@@ -25,10 +21,9 @@ class IMCFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-        ): View? {
+        ): View {
 
-        binding = FragmentImcBinding.inflate(layoutInflater, container, false)
-
+        binding = FragmentImc2Binding.inflate(layoutInflater, container, false)
 
         getUserGenero()
         getUserAltura()
@@ -42,7 +37,7 @@ class IMCFragment : Fragment() {
     }
 
     private fun getUserAltura() {
-        binding.seekBar.setOnSeekBarChangeListener(object :SeekBar.OnSeekBarChangeListener{
+        binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
 
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
 
@@ -69,10 +64,10 @@ class IMCFragment : Fragment() {
             genero = "Mulher"
         }
 
-            binding.buttonHomem.setOnClickListener {
-                binding.buttonHomem.setBackgroundResource(R.drawable.ic_homem_clicked)
-                binding.buttonMulher.setBackgroundResource(R.drawable.ic_mulher_)
-                genero = "Homem"
+        binding.buttonHomem.setOnClickListener {
+            binding.buttonHomem.setBackgroundResource(R.drawable.ic_homem_clicked)
+            binding.buttonMulher.setBackgroundResource(R.drawable.ic_mulher_)
+            genero = "Homem"
         }
     }
 
@@ -102,6 +97,8 @@ class IMCFragment : Fragment() {
 
     private fun btnClick(){
 
+
+        //Teste
         val textView = binding.resultadoPeso
 
         comunicador = activity as Comunicador
@@ -112,6 +109,3 @@ class IMCFragment : Fragment() {
         }
     }
 }
-
-
-

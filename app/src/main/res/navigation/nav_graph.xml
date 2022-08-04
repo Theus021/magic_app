@@ -11,15 +11,6 @@
         android:label="fragment_gasolina"
         tools:layout="@layout/fragment_gasolina" />
     <fragment
-        android:id="@+id/IMCFragment"
-        android:name="com.generation.superapp.IMCFragment"
-        android:label="fragment_i_m_c"
-        tools:layout="@layout/fragment_imc" >
-        <action
-            android:id="@+id/action_IMCFragment_to_resultadoImc"
-            app:destination="@id/resultadoImc" />
-    </fragment>
-    <fragment
         android:id="@+id/rodizioFragment"
         android:name="com.generation.superapp.RodizioFragment"
         android:label="fragment_rodizio"
@@ -33,19 +24,24 @@
             android:id="@+id/action_homeFragment_to_rodizioFragment"
             app:destination="@id/rodizioFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_IMCFragment"
-            app:destination="@id/IMCFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_gasolinaFragment2"
             app:destination="@id/gasolinaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imc2Fragment"
+            app:destination="@id/imc2Fragment" />
     </fragment>
     <dialog
         android:id="@+id/resultadoImc"
         android:name="com.generation.superapp.ResultadoImc"
         android:label="fragment_resultado_imc"
-        tools:layout="@layout/fragment_resultado_imc" >
+        tools:layout="@layout/fragment_resultado_imc" />
+    <fragment
+        android:id="@+id/imc2Fragment"
+        android:name="com.generation.superapp.Imc2Fragment"
+        android:label="fragment_imc2"
+        tools:layout="@layout/fragment_imc2" >
         <action
-            android:id="@+id/action_resultadoImc_to_IMCFragment"
-            app:destination="@id/IMCFragment" />
-    </dialog>
+            android:id="@+id/action_imc2Fragment_to_resultadoImc"
+            app:destination="@id/resultadoImc" />
+    </fragment>
 </navigation>

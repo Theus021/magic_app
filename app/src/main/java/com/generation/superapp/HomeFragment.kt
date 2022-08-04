@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
 
         binding.cardImc.setOnClickListener{
-                findNavController().navigate(R.id.action_homeFragment_to_IMCFragment)
+                findNavController().navigate(R.id.action_homeFragment_to_imc2Fragment)
         }
         return binding.root
     }

@@ -5,36 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context=".IMCFragment">
+    tools:context=".Imc2Fragment">
 
     <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:id="@+id/relativeLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/buttonMulher"
         android:layout_width="195dp"
         android:layout_height="150dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginEnd="-25.5dp"
         android:background="@drawable/ic_mulher_"
         app:layout_constraintBottom_toTopOf="@+id/cardAltura"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/buttonHomem"
         android:layout_width="195dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginStart="-24dp"
         android:background="@drawable/ic_homem_"
         app:layout_constraintBottom_toTopOf="@+id/cardAltura"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
@@ -55,7 +55,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_mais" />
+            android:src="@drawable/ic_mais"
+            android:contentDescription="@string/botaodemais" />
 
         <ImageView
             android:id="@+id/buttonenosID"
@@ -65,7 +66,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="25dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_menos" />
+            android:src="@drawable/ic_menos"
+            android:contentDescription="@string/botaodemenos" />
 
         <TextView
             android:id="@+id/tituloIdade"
@@ -89,10 +91,8 @@
             android:layout_below="@+id/tituloIdade"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
             android:text="@string/_18"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -117,7 +117,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="25dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_menos" />
+            android:src="@drawable/ic_menos"
+            android:contentDescription="@string/botaodemenos2" />
 
         <ImageView
             android:id="@+id/buttonMaisKg"
@@ -127,7 +128,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_mais" />
+            android:src="@drawable/ic_mais"
+            android:contentDescription="@string/botaodemais2" />
 
         <TextView
             android:id="@+id/tituloPeso"
@@ -149,10 +151,8 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/buttonMaisKg"
             android:layout_below="@+id/tituloPeso"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
             android:text="@string/_60"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -224,7 +224,6 @@
     </RelativeLayout>
 
 
-
     <Button
         android:id="@+id/buttonCalcular"
         android:layout_width="match_parent"
@@ -235,7 +234,6 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
