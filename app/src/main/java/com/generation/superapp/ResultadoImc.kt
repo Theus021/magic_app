@@ -14,10 +14,6 @@ import org.w3c.dom.Text
 class ResultadoImc: DialogFragment() {
 
     private lateinit var binding: FragmentResultadoImcBinding
-    private lateinit var comunicador : Comunicador
-
-    var output: String? = ""
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,19 +22,11 @@ class ResultadoImc: DialogFragment() {
     ): View {
         binding = FragmentResultadoImcBinding.inflate(layoutInflater, container, false)
 
-        var textView : TextView = binding.resultadoPesoDg
+        var resultado : TextView = binding.resultadoPesoDg
 
-
-        output = arguments?.getString("input")
-
-
-        textView.text = output
+        resultado.text = requireArguments().getString("valorImc").toString()
 
         return binding.root
 
     }
-
-
-
-
 }

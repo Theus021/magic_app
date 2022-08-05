@@ -9,12 +9,12 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import com.generation.superapp.databinding.FragmentImc2Binding
 
 class Imc2Fragment : Fragment() {
 
     private lateinit var binding: FragmentImc2Binding
-    private lateinit var comunicador : Comunicador
 
     private var genero: String = ""
     private var altura: Int = 0
@@ -40,18 +40,20 @@ class Imc2Fragment : Fragment() {
     }
 
     private fun getUserAltura() {
+
         binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
 
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
 
                 binding.resultadoAltura.text = progress.toString()
                 altura = progress
+
+
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
 
             }
-
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
 
             }
@@ -72,6 +74,7 @@ class Imc2Fragment : Fragment() {
             binding.buttonMulher.setBackgroundResource(R.drawable.ic_mulher_)
             genero = "Homem"
         }
+
     }
 
     private fun getUserIdade() {
@@ -96,26 +99,31 @@ class Imc2Fragment : Fragment() {
             peso--
             binding.resultadoPeso.text = peso.toString()
 
-            comunicador.passData(binding.resultadoPeso.text.toString())
         }
+
     }
 
     private fun btnClick(){
 
-        val textView = binding.resultadoPeso
-        val textasd = binding.resultadoAltura
-
-        val dialog = Dialog(activity as AppCompatActivity)
-
-        comunicador = activity as Comunicador
+        val resultado = Calculo().toString()
+        val categoria: String
 
         binding.buttonCalcular.setOnClickListener {
 
-            comunicador.passData(textView.text.toString())
-            comunicador.passData(textasd.text.toString())
+            findNavController().navigate(R.id.action_imc2Fragment_to_resultadoImc, Bundle().apply {
+                putString ("valorImc", resultado as String?)
 
+            })
 
         }
+    }
+
+    private fun Calculo(): Int {
+
+        val imc = (altura*altura)
+
+        return imc
+
     }
 
 }

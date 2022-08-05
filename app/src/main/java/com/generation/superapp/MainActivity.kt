@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.generation.superapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), Comunicador {
+class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
     private  val navController: NavController by lazy {
@@ -23,21 +23,5 @@ class MainActivity : AppCompatActivity(), Comunicador {
 
 
     }
-
-    override fun passData(editDataResult: String) {
-        val bundle = Bundle()
-        bundle.putString("input", editDataResult)
-
-
-
-
-       val transicao = this.supportFragmentManager.beginTransaction()
-        val fragmentB = ResultadoImc()
-
-        fragmentB.arguments = bundle
-
-        transicao.replace(R.id.fragmentContainerView, fragmentB).commit()
-    }
-
 
 }

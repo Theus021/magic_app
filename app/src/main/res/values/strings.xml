@@ -95,7 +95,9 @@
     <string name="botaodemenos">BotaoDeMenos</string>
     <string name="botaodemenos2">BotaoDeMenos2</string>
     <string name="botaodemais2">botaoDeMais2</string>
-    <string name="seu_imc">Seu IMC é:</string>
-    <string name="categoria">Categoria</string>
+    <string name="categoriaPeso">Peso</string>
+    <string name="categoria">CATEGORIA</string>
+    <string name="imc">IMC</string>
+    <string name="_60_">60</string>
 
 </resources>

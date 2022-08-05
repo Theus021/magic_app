@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="25dp"
             android:background="@drawable/radius_card_view"
             android:padding="20dp"
@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/seu_imc"
+                android:text="@string/imc"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="38sp"
@@ -55,32 +55,6 @@
                 android:gravity="center"/>
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:orientation="vertical"
-            android:background="@drawable/radius_card_view">
-
-            <TextView
-                android:id="@+id/categoriaImc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
-                android:textAlignment="center"
-                android:text="@string/categoria"
-                android:textColor="@color/white"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:src="@drawable/ic_barra_de_peso__7_" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="340dp"

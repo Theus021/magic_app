@@ -34,7 +34,11 @@
         android:id="@+id/resultadoImc"
         android:name="com.generation.superapp.ResultadoImc"
         android:label="fragment_resultado_imc"
-        tools:layout="@layout/fragment_resultado_imc" />
+        tools:layout="@layout/fragment_resultado_imc" >
+        <action
+            android:id="@+id/action_resultadoImc_to_imc2Fragment"
+            app:destination="@id/imc2Fragment" />
+    </dialog>
     <fragment
         android:id="@+id/imc2Fragment"
         android:name="com.generation.superapp.Imc2Fragment"
@@ -43,5 +47,8 @@
         <action
             android:id="@+id/action_imc2Fragment_to_resultadoImc"
             app:destination="@id/resultadoImc" />
+        <action
+            android:id="@+id/action_imc2Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
