@@ -22,9 +22,12 @@ class ResultadoImc: DialogFragment() {
     ): View {
         binding = FragmentResultadoImcBinding.inflate(layoutInflater, container, false)
 
-        var resultado : TextView = binding.resultadoPesoDg
+        var resultado : TextView = binding.resultado
+
 
         resultado.text = requireArguments().getString("valorImc").toString()
+
+
 
         return binding.root
 

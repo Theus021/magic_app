@@ -9,7 +9,11 @@
         android:id="@+id/gasolinaFragment"
         android:name="com.generation.superapp.GasolinaFragment"
         android:label="fragment_gasolina"
-        tools:layout="@layout/fragment_gasolina" />
+        tools:layout="@layout/fragment_gasolina" >
+        <action
+            android:id="@+id/action_gasolinaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rodizioFragment"
         android:name="com.generation.superapp.RodizioFragment"

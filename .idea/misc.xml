@@ -10,18 +10,26 @@
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable-v24/ball_red.xml" value="0.2115" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable-v24/ball_yellow.xml" value="0.2115" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable-v24/balll_blue.xml" value="0.2115" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/card_menos_vantajoso.xml" value="0.19" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/card_vantajoso.xml" value="0.19" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/card_view_2.xml" value="0.2115" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/ic_component_1__7_.xml" value="0.2115" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/ic_grafico.xml" value="0.1545" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/ic_mais_vantajoso.xml" value="0.2115" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/radius_card_view.xml" value="0.19" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/seekbar_progress.xml" value="0.2115" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/drawable/seekbar_style.xml" value="0.2115" />
-        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_gasolina.xml" value="0.15" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_gasolina.xml" value="0.25" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_home.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_i_m_c.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_imc.xml" value="0.17255434782608695" />
-        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_imc2.xml" value="0.5" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_imc2.xml" value="0.33" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_resultado.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_resultado_gasolina.xml" value="0.17255434782608695" />
-        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_resultado_imc.xml" value="0.28939393939393937" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_resultado_imc.xml" value="0.33" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_resultado_rodizio.xml" value="0.33" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_rodizio.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/cliente/AndroidStudioProjects/magic_app/app/src/main/res/layout/fragment_rodizio_resultado.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable-v24/ball_baby_blue.xml" value="0.2075" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable-v24/ball_green.xml" value="0.2075" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/superApp/app/src/main/res/drawable/background_cardview.xml" value="0.2" />

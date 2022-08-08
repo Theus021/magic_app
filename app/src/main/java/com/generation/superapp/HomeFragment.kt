@@ -22,6 +22,10 @@ class HomeFragment : Fragment() {
         binding.cardImc.setOnClickListener{
                 findNavController().navigate(R.id.action_homeFragment_to_imc2Fragment)
         }
+
+        binding.cardGasolina.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_gasolinaFragment2)
+        }
         return binding.root
     }
 

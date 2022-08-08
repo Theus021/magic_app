@@ -99,5 +99,13 @@
     <string name="categoria">CATEGORIA</string>
     <string name="imc">IMC</string>
     <string name="_60_">60</string>
+    <string name="seu_imc">Seu IMC é:</string>
+    <string name="gasolina__">Gasolina</string>
+    <string name="digite_o_valor">Digite o valor</string>
+    <string name="r">R$</string>
+    <string name="etanol__">Etanol</string>
+    <string name="_calcular_">Calcular</string>
+    <string name="calcular___">Calcular</string>
+    <string name="_0_00">0.00</string>
 
 </resources>

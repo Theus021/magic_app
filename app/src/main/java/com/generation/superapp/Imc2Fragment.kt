@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.SeekBar
+import android.widget.SeekBar.OnSeekBarChangeListener
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.generation.superapp.databinding.FragmentImc2Binding
@@ -18,8 +20,8 @@ class Imc2Fragment : Fragment() {
 
     private var genero: String = ""
     private var altura: Int = 0
-    private var idade: Int = 18
-    private var peso: Int = 60
+    private var idade = 0
+    private var peso = 60
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,24 +43,25 @@ class Imc2Fragment : Fragment() {
 
     private fun getUserAltura() {
 
-        binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+        binding.seekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
 
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+            override fun onProgressChanged(p0: SeekBar?, progress: Int, p2: Boolean) {
 
                 binding.resultadoAltura.text = progress.toString()
                 altura = progress
 
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {
 
             }
 
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-
-            }
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {
+            override fun onStopTrackingTouch(p0: SeekBar?) {
 
             }
 
         })
+
 
     }
 
@@ -118,9 +121,9 @@ class Imc2Fragment : Fragment() {
         }
     }
 
-    private fun Calculo(): Int {
+    private fun Calculo(): Double {
 
-        val imc = (altura*altura)
+        val imc = (peso/(altura).toDouble())*1000
 
         return imc
 
